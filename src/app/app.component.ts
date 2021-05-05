@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: "my-app",
@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   providers: [{ provide: Window, useValue: window }]
 })
 export class AppComponent implements OnInit {
-  files: FileSystemFileHandle[] = [];
+  files: FileSystemFileHandle [] = [];
 
   constructor(private window: Window) {}
 
