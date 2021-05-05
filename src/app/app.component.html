@@ -1,0 +1,21 @@
+<div fxFlex>
+  <div fxFlex fxLayout="row" fxLayoutAlign="start stretch" fxLayoutGap="10px">
+    <mat-card fxFlex="40" class="mat-elevation-z4">
+      <mat-card-title fxLayout="row" fxLayoutAlign="space-between center">
+        <div>Watch</div>
+        <button mat-icon-button (click)="onOpenFolder()"><mat-icon>folder_open</mat-icon></button>
+      </mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+      <mat-card-content>
+        <div *ngFor="let file of files">
+          {{file | json}}
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="60" class="mat-elevation-z4">
+      <mat-card-title>Preview</mat-card-title>
+      <mat-card-content></mat-card-content>
+    </mat-card>
+  </div>
+</div>
